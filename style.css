@@ -1,0 +1,562 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: sans-serif;
+}
+nav{
+  height: 150px;
+  background: white;
+}
+nav img{
+  position: absolute;
+  top: 25px;
+  left: 2%;
+  width: 120px;
+  height: 120px;
+}
+nav ul{
+  float: right;
+  margin-top: 50px;
+  list-style: none;
+}
+nav ul li.nav-li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 15px;
+  right: 5%;
+}
+nav ul li.nav-li:not(:last-child) a{
+  position: relative;
+  margin: 5px 0;
+  color: #cccccc;;
+  font-size: 25px;
+  text-decoration: none;
+}
+nav ul li.nav-li:not(:last-child) a:hover{
+  color: #94d60b;;
+}
+nav ul li.nav-li:not(:last-child) a:after{
+  position: absolute;
+  bottom: -3.4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background:  #94d60b;
+  height: 1px;
+}
+nav ul li.nav-li a:hover:after {
+  width: 100%;
+  height: 10%;
+}
+
+li.nav-li:last-child {
+  color: white;
+  background: #fd7d30;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+li.nav-li:last-child:hover{
+  background: #fd7f30cb;
+}
+a:last-child{
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  color: #94d60b;
+  border-bottom: 3px solid  #94d60b;
+}
+
+ul li.nav-li a,
+ul li.nav-li a:after,
+ul li.nav-li a:before {
+  transition: all .3s;
+}
+
+label #sign-one, label #sign-two{
+  font-size: 30px;
+  color: #cccccc;
+  float: right;
+  line-height: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: none;
+}
+#res-menu{
+  display: none;
+}
+.banner-area{
+  height: 470px;
+  margin-top: 12px;
+  margin-left: 250px;
+  background: url(https://www.wires.org.au/Images/slider1.jpg)no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-text{
+  position: relative;
+  top: 53%;
+  transform: translate(-50% -50%);
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.651);
+  padding: 30px;
+}
+.banner-text h2{
+  font-size: 30px;
+  margin: 0;
+}
+.des{
+  margin: 20px;
+  display: block;
+  font-size: 25px;
+}
+.btn{
+  padding: 10px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  background: #94d60b;
+  transition: 0.3s all;
+}
+.btn:hover{
+  background: #333333e5;
+}
+.icon-bar{
+ position: fixed;
+ top: 45%;
+ transform: translateY(-50%); 
+}
+.icon-bar a{
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #9e9e9e;
+  background: #333333;
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  border: 1px #cccccc;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 25px;
+}
+.icon-bar a:hover{
+  background:#333333;
+  color: #cccccc;
+} 
+section.about{
+  padding: 100px 0px 100px 100px;
+  margin-left: 150px;
+}
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col{
+  position: relative;
+  width: 50%;
+}
+.titleText{
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+.titleText span{
+  color: #94d60b;
+  font-weight: 700;
+  font-size: 60px;
+}
+.row .col .imgBx{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.row .col .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+  object-fit: cover;
+}
+a {
+  color: #94d60b;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.circle{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    background: #94d60b;
+    float: right;
+    border-radius: 50%;
+}
+.circle:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.circle-content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.circle-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+.circle-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    color: white
+}
+main {
+    display: block;
+}
+section.three-colum{
+  padding: 100px 0px 100px 100px;
+  margin-left: 150px;
+  margin-top: 50%;
+}
+.three-colum ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 16px;
+}
+.three-colum ul li {
+  border: 1px solid #E2E2E2;
+  border-radius: 8px;
+  list-style-type: none;
+}
+.three-colum ul li figure {
+  max-height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+.three-colum ul li figure img {
+  width: 100%;
+}
+.three-colum ul li figure figcaption {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+.three-colum ul li figure figcaption h3 {
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+}
+.three-colum ul li p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px 12px;
+  text-align: center;
+  align-items: center;
+  color: #666666;
+  position: relative;
+}
+.three-colum ul li a {
+  padding: 8px 16px;
+  margin: 8px;
+}
+.three-colum span {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.donation-btn{
+  padding: 15px 50px;
+  margin:10px 4px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  background: #fd7f30cb;
+  border-radius: 30px;
+}
+.donation-btn:hover {
+  background: #333333e5;
+}
+
+.donation-btn:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+.form_wrapper {
+  margin-top: 50%;
+  margin-left: 20%;
+	width:1000x;
+	max-width:100%;
+	box-sizing:border-box;
+	position:relative;
+	z-index:1;
+  text-align:center;
+	padding: 15px 0;
+}
+.form_container {
+	padding:15px;
+}
+
+.form_wrapper .row-buttons {
+	margin:10px -15px;
+}
+.form_wrapper .row-buttons  div {
+	padding:0 15px;
+	box-sizing:border-box;
+}
+.form_wrapper .col_half {
+	width:50%;
+	float:left;
+	padding: 10px;
+	padding: 10p;
+}
+.form_wrapper .input_field, .form_wrapper{
+	position:relative;
+}
+.form_wrapper .input_field span, .form_wrapper span {
+	position:absolute;
+	left:0;
+	top:0;
+	color:#333;
+	height:100%;
+	text-align:center;
+	width:30px;
+}
+.form_wrapper .textarea_field  span {
+	max-height:35px;
+}
+.form_wrapper .input_field span i, .form_wrapper .textarea_field span i {
+	padding-top:12px;
+}
+.form_wrapper input[type="text"], .form_wrapper input[type="email"], .form_wrapper input[type="tel"], textarea {
+	width:100%;
+	padding:10px 10px 10px 35px;
+	box-sizing:border-box;
+	outline:none;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+.form_wrapper textarea {
+	height:8em;
+}
+.form_wrapper input[type="donate"] {
+	background:#94d60b;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	border:none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+	outline:none;
+	cursor:pointer;
+	color:#fff;
+	font-size:25px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+.form_wrapper input[type="donate"]:hover, .form_wrapper input[type="donate"]:focus {
+	background:#333333e5;
+}
+
+
+
+@media(max-width: 870px){
+  label #sign-one{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 1000vh;
+    background: #333333;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  nav ul li.nav-li{
+    display: block;
+    margin-top: 50px;
+    line-height: 30px;
+  }
+  nav ul li.nav-li a{
+    font-size: 30px;
+  }
+  li.nav-li:last-child {
+    display: inline-block;
+    margin: 50px 50px 50px 50px;
+    width: 100px;
+  }
+  #res-menu:checked ~ ul{
+    left: 0;
+    position: sticky;
+  }
+  #res-menu:checked ~ label #sign-one{
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two{
+    display: block;
+  }
+  nav img{
+  position: absolute;
+  top: 25px;
+  left: 2%;
+  width: 100px;
+  height: 100px;
+  }
+  .icon-bar{
+    width: 20%;
+    top: 300px;
+    transform: translateY(-30%); 
+    }
+    .icon-bar a {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #9e9e9e;
+    background: #333333;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px #cccccc;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 15px;
+    }
+  .banner-area{
+    height: 450px;
+    margin-top: 12px;
+    margin-left: 100px;
+    background: url(https://www.wires.org.au/Images/slider1.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+  }
+  .banner-text{
+    position: relative;
+    top: 50%%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.651);
+    padding: 30px;
+  }
+  .banner-text h2{
+    font-size: 25px;
+    margin: 0;
+  }
+  .des{
+    margin: 20px;
+    display: block;
+    font-size: 15px;
+  }
+  .btn{
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #94d60b;
+    transition: 0.3s all;
+  }
+  .row .col .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+  section.about{
+    padding:30px;
+    margin-left: 75px;
+    margin-top: 50px;
+  }
+  .row{
+    flex-direction:column;
+  }
+  .row .col{
+    position: relative;
+    width: 100%;
+  }
+  .row .col .imgBx{
+    height: 300px;
+    margin-top: 20px;
+  }
+  .circle{
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+    background: #94d60b;
+    float: right;
+    border-radius: 50%;
+  }
+  section.three-colum{
+  padding: 100px 0px 100px 50px;
+  margin-left: 75px;
+  margin-top: 65%;
+  }
+  .form_wrapper .col_half {
+	width:100%;
+	float:none;
+  }
+  .donation-btn{
+  padding: 5px 50px;
+  margin:10px 4px;
+  }
+  section.three-colum{
+  padding: 0px;
+  margin-top: 90%;
+}
+
+}
+
+
+
+

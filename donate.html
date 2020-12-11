@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="res-menu">
+      <label for="res-menu">
+        <i class="fa fa-bars " id="sign-one"></i>
+        <i class="fa fa-window-close" id="sign-two"></i>
+      </label>
+      <a href="index.html"><img src="/Image/logo.png" alt="Wires">
+      <ul>
+        <li class="nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-li"><a href="about.html">About</a></li>
+        <li class="nav-li"><a href="contact.html">Contact</a></li>
+        <li class="nav-li"><a href="news.html">News</a></li>
+        <li class="nav-li"><a onclick="goBack()">Back</a></li>
+      </ul>
+    </nav>
+    <div class="icon-bar">
+    <a href="#"><i class ="fa fa-facebook fa-2x"></i></a>
+    <a href="#"><i class ="fa fa-instagram fa-2x"></i></a>
+    <a href="#"><i class ="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class ="fa fa-youtube-play fa-2x"></i></a>
+    </div>
+
+<div class='circle'>
+    <div class='circle-content'><div><span class="des"><h2>Donate</h2><br>Just $20 can help us to rescue and care for more native animals.<br>
+    <a href="#" class="donation-btn">
+    Payal
+  </a> <a href="#" class="donation-btn">
+    One Time
+  </a>
+     <a href="#" class="donation-btn">
+    Monthly
+  </a>
+    </span>
+      </div>
+    </div>
+</div>
+ <div class="form_wrapper">
+  <div class="form_container">
+    <form>
+      <div class="row clearfix">
+        <div class="col_half">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+            <input type="text" name="first_name" placeholder="First name" required="">
+          </div>
+        </div>
+        <div class="col_half">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+            <input type="text" name="last_name" placeholder="Last name">
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col_half">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required="">
+          </div>
+        </div>
+        <div class="col_half">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+            <input type="tel" name="phone" placeholder="Phone"required="">
+          </div>
+        </div>
+      </div>
+      <div class="row-buttons clearfix">
+        <div class="textarea_field"> 
+            <a href="#" class="donation-btn">Payal</a> 
+            <a href="#" class="donation-btn">One Time</a>
+            <a href="#" class="donation-btn">Monthly</a>
+        </div>
+      </div>
+      <input class="button" type="donate" value="Donate">
+  </div>
+  </body>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</body>
+<script src="script.js"></script>
+</html>
